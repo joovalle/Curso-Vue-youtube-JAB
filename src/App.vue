@@ -1,23 +1,24 @@
 <script setup>
+import { ref } from 'vue'
+const contador =ref(0);
 
+const incremento = ()=>{
+  contador.value++;
+}
+const Decremento = ()=>{
+  contador.value--;
+}
 </script>
 
 <template>
-<div>
+
+  <div>
   
-  <button type="button" class="btn btn-primary"> <i class="bi bi-archive-fill"></i>Primary </button>
-  <button type="button" class="btn btn-secondary">Secondary</button>
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-light">Light</button>
-  <button type="button" class="btn btn-dark">Dark</button>
+    <button @click="incremento" type="button" class="btn btn-success"><i class="bi bi-arrow-up"></i>UP</button>
+    <span> {{ contador }}</span>
+    <button @click="Decremento" type="button" class="btn btn-danger"><i class="bi bi-arrow-down"></i>Down</button>
 
-  <button type="button" class="btn btn-link">Link</button>
-</div> 
-
-
+  </div> 
 
 </template>
 

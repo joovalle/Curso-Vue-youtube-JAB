@@ -1,0 +1,7 @@
+git pull origin main #Sincroniza tu repositorio local con el remoto
+git add . #Añade todos los cambios al área de preparación
+git commit -m "Descripción de los cambios realizados"  #Confirma los cambios
+git push origin main #Envía los cambios al repositorio remoto
+
+
+Con estos comandos, tus cambios se guardarán en el repositorio de GitHub, y podrás retomar tu trabajo desde otro equipo simplemente clonando el repositorio o actualizando tu copia local con git pull.
