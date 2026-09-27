@@ -1,27 +1,17 @@
 <script setup>
-import { ref } from 'vue'
-const contador =ref(0);
-
-const incremento = ()=>{
-  contador.value++;
-}
-const Decremento = ()=>{
-  contador.value--;
-}
+import { RouterView } from 'vue-router'
+import NavBar from '@/components/layout/NavBar.vue'
+import FooterSection from '@/components/layout/FooterSection.vue'
+import WhatsAppButton from '@/components/layout/WhatsAppButton.vue'
+import DemoBanner from '@/components/layout/DemoBanner.vue'
 </script>
 
 <template>
-
-  <div>
-  
-    <button @click="incremento" type="button" class="btn btn-success"><i class="bi bi-arrow-up"></i>UP</button>
-    <span> {{ contador }}</span>
-    <button @click="Decremento" type="button" class="btn btn-danger"><i class="bi bi-arrow-down"></i>Down</button>
-
-  </div> 
-
+  <DemoBanner />
+  <NavBar />
+  <main style="flex: 1">
+    <RouterView />
+  </main>
+  <FooterSection />
+  <WhatsAppButton />
 </template>
-
-<style scoped>
-
-</style>

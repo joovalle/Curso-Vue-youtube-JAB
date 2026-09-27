@@ -1,0 +1,165 @@
+/*
+  Sistema de temas: cada paleta define variables para modo claro y oscuro.
+  Se activan con atributos en <html>: data-palette="brand|azul|rojo|verde"  data-mode="light|dark"
+*/
+
+:root {
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.16);
+  --font-base: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --header-h: 68px;
+}
+
+/* ---------- Paleta BRAND ("La Ruta del Neumático": negro / naranja / amarillo) ---------- */
+:root[data-palette='brand'][data-mode='light'] {
+  --color-bg: #f5f4f2;
+  --color-bg-alt: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #5c5c5c;
+  --color-border: #e3e1dd;
+  --color-primary: #f5a623;
+  --color-primary-hover: #d98f12;
+  --color-primary-contrast: #141414;
+  --color-accent: #ffd23f;
+  --color-header-bg: #141414;
+  --color-header-text: #ffffff;
+  --color-success: #2e7d32;
+  --color-danger: #d32f2f;
+  --color-warning: #ed6c02;
+}
+:root[data-palette='brand'][data-mode='dark'] {
+  --color-bg: #121212;
+  --color-bg-alt: #1b1b1b;
+  --color-surface: #1e1e1e;
+  --color-text: #f2f2f2;
+  --color-text-muted: #b5b5b5;
+  --color-border: #333333;
+  --color-primary: #f5a623;
+  --color-primary-hover: #ffbb47;
+  --color-primary-contrast: #141414;
+  --color-accent: #ffd23f;
+  --color-header-bg: #0b0b0b;
+  --color-header-text: #ffffff;
+  --color-success: #66bb6a;
+  --color-danger: #ef5350;
+  --color-warning: #ffa726;
+}
+
+/* ---------- Paleta AZUL CARRETERA ---------- */
+:root[data-palette='azul'][data-mode='light'] {
+  --color-bg: #f3f6fa;
+  --color-bg-alt: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #14202b;
+  --color-text-muted: #566472;
+  --color-border: #dbe3ea;
+  --color-primary: #1565c0;
+  --color-primary-hover: #0d4a94;
+  --color-primary-contrast: #ffffff;
+  --color-accent: #ffb300;
+  --color-header-bg: #0d1b2a;
+  --color-header-text: #ffffff;
+  --color-success: #2e7d32;
+  --color-danger: #d32f2f;
+  --color-warning: #ed6c02;
+}
+:root[data-palette='azul'][data-mode='dark'] {
+  --color-bg: #0f1720;
+  --color-bg-alt: #16212c;
+  --color-surface: #182531;
+  --color-text: #eef3f8;
+  --color-text-muted: #a9b8c4;
+  --color-border: #2a3946;
+  --color-primary: #4c9be8;
+  --color-primary-hover: #75b3ee;
+  --color-primary-contrast: #08141d;
+  --color-accent: #ffc94d;
+  --color-header-bg: #08141d;
+  --color-header-text: #ffffff;
+  --color-success: #66bb6a;
+  --color-danger: #ef5350;
+  --color-warning: #ffa726;
+}
+
+/* ---------- Paleta ROJO RALLY ---------- */
+:root[data-palette='rojo'][data-mode='light'] {
+  --color-bg: #faf5f4;
+  --color-bg-alt: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #201414;
+  --color-text-muted: #61504e;
+  --color-border: #ecdedc;
+  --color-primary: #c62828;
+  --color-primary-hover: #a01f1f;
+  --color-primary-contrast: #ffffff;
+  --color-accent: #ffca28;
+  --color-header-bg: #1a1414;
+  --color-header-text: #ffffff;
+  --color-success: #2e7d32;
+  --color-danger: #b71c1c;
+  --color-warning: #ed6c02;
+}
+:root[data-palette='rojo'][data-mode='dark'] {
+  --color-bg: #171010;
+  --color-bg-alt: #1f1616;
+  --color-surface: #221818;
+  --color-text: #f6ecec;
+  --color-text-muted: #c2adad;
+  --color-border: #3a2828;
+  --color-primary: #ef5350;
+  --color-primary-hover: #f4837f;
+  --color-primary-contrast: #1a0a0a;
+  --color-accent: #ffca28;
+  --color-header-bg: #0f0a0a;
+  --color-header-text: #ffffff;
+  --color-success: #66bb6a;
+  --color-danger: #ff6b68;
+  --color-warning: #ffa726;
+}
+
+/* ---------- Paleta VERDE BOSQUE ---------- */
+:root[data-palette='verde'][data-mode='light'] {
+  --color-bg: #f4f8f4;
+  --color-bg-alt: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #142016;
+  --color-text-muted: #55655a;
+  --color-border: #dfe9e0;
+  --color-primary: #2e7d32;
+  --color-primary-hover: #245f27;
+  --color-primary-contrast: #ffffff;
+  --color-accent: #ffb300;
+  --color-header-bg: #13251a;
+  --color-header-text: #ffffff;
+  --color-success: #2e7d32;
+  --color-danger: #d32f2f;
+  --color-warning: #ed6c02;
+}
+:root[data-palette='verde'][data-mode='dark'] {
+  --color-bg: #101711;
+  --color-bg-alt: #172018;
+  --color-surface: #19241b;
+  --color-text: #eef4ef;
+  --color-text-muted: #aebeb1;
+  --color-border: #2b3a2d;
+  --color-primary: #66bb6a;
+  --color-primary-hover: #8ccd8f;
+  --color-primary-contrast: #0c1a0d;
+  --color-accent: #ffc94d;
+  --color-header-bg: #0b130c;
+  --color-header-text: #ffffff;
+  --color-success: #81c784;
+  --color-danger: #ef5350;
+  --color-warning: #ffa726;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
