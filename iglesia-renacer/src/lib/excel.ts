@@ -11,7 +11,9 @@ interface Opciones {
 }
 
 const MORADO = 'FF7A4A9E'
-const FORMATO_DINERO = (import.meta.env.VITE_MONEDA as string | undefined) === 'USD' ? '"$"#,##0.00' : '#,##0.##'
+const MONEDA = (import.meta.env.VITE_MONEDA as string | undefined) || 'CLP'
+// Pesos chilenos no usan decimales; el resto de monedas muestra 2
+const FORMATO_DINERO = ['CLP', 'COP', 'PYG'].includes(MONEDA) ? '"$"#,##0' : '"$"#,##0.00'
 
 export async function exportarExcel(o: Opciones) {
   const ExcelJS = (await import('exceljs')).default
