@@ -36,7 +36,9 @@ npm test           # pruebas unitarias (canon, referencias, lector e-Sword, bús
 npm run build      # versión de producción en dist/ (lista para cualquier hosting estático)
 ```
 
-Para publicar la web basta con subir `dist/` a GitHub Pages, Cloudflare Pages o Netlify (gratis). Las rutas son relativas, así que funciona en cualquier subcarpeta.
+**Publicación automática:** cada cambio en `lumen/` que llega a `main` se publica solo en GitHub Pages (ver `.github/workflows/deploy-lumen.yml`), en https://joovalle.github.io/Curso-Vue-youtube-JAB/
+
+También puedes publicarla en otro lugar: basta con subir `dist/` a GitHub Pages, Cloudflare Pages o Netlify (gratis). Las rutas son relativas, así que funciona en cualquier subcarpeta.
 
 ### Regenerar los módulos libres
 
