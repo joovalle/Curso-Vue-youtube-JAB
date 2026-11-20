@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#fbfaf7" />
+    <meta name="description" content="Lumen: una aplicación libre y gratuita para leer y estudiar la Biblia. Compatible con módulos de e-Sword, funciona sin conexión." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Lumen — Biblia de estudio</title>
+    <script>
+      // Aplica el tema guardado antes de pintar, para evitar destellos.
+      try {
+        var p = JSON.parse(localStorage.getItem('lumen.prefs') || '{}')
+        var t = p.theme || 'auto'
+        if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>Lumen necesita JavaScript para funcionar.</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

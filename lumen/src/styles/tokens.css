@@ -1,0 +1,125 @@
+/*
+ * Lumen — tokens de diseño.
+ * Tres temas cálidos pensados para leer durante horas: Claro, Sepia y Oscuro.
+ */
+:root {
+  --font-ui: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Literata Variable', 'Literata', Georgia, 'Times New Roman', serif;
+  --font-read: var(--font-serif);
+
+  --read-size: 19px;
+  --read-leading: 1.75;
+  --read-measure: 38rem;
+
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 18px;
+  --radius-xl: 26px;
+
+  --rail-w: 76px;
+  --panel-w: 380px;
+  --bar-h: 60px;
+  --bottom-nav-h: 64px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 220ms;
+
+  /* Tema claro (por defecto) */
+  --bg: #fbfaf7;
+  --bg-elevated: #ffffff;
+  --surface: #f5f2ec;
+  --surface-2: #ece7dd;
+  --border: #e6e0d4;
+  --border-strong: #d4ccbc;
+  --text: #1e1b16;
+  --text-2: #5c554a;
+  --text-3: #8f877a;
+  --accent: #96661c;
+  --accent-strong: #7a5212;
+  --accent-soft: rgba(150, 102, 28, 0.11);
+  --accent-contrast: #ffffff;
+  --selection: rgba(150, 102, 28, 0.14);
+  --shadow-s: 0 1px 2px rgba(40, 30, 10, 0.06), 0 1px 1px rgba(40, 30, 10, 0.04);
+  --shadow-m: 0 8px 24px -8px rgba(40, 30, 10, 0.16), 0 2px 6px rgba(40, 30, 10, 0.06);
+  --shadow-l: 0 24px 60px -16px rgba(40, 30, 10, 0.28), 0 4px 14px rgba(40, 30, 10, 0.08);
+  --backdrop: rgba(30, 24, 14, 0.32);
+  --glass: rgba(251, 250, 247, 0.9);
+
+  --hl-gold: rgba(244, 196, 48, 0.36);
+  --hl-mint: rgba(96, 196, 140, 0.28);
+  --hl-sky: rgba(90, 160, 235, 0.26);
+  --hl-lilac: rgba(160, 120, 225, 0.26);
+  --hl-rose: rgba(236, 110, 130, 0.26);
+
+  --cat-law: #b0703a;
+  --cat-history: #8a7a3c;
+  --cat-poetry: #5d8a5a;
+  --cat-major-prophets: #4a7a96;
+  --cat-minor-prophets: #6a6aa6;
+  --cat-gospels: #a8503c;
+  --cat-acts: #b07a3a;
+  --cat-pauline: #7a5aa0;
+  --cat-general: #3e8a84;
+  --cat-apocalyptic: #9a4a6a;
+
+  color-scheme: light;
+}
+
+:root[data-theme='sepia'] {
+  --bg: #f4ecdc;
+  --bg-elevated: #faf4e8;
+  --surface: #ede2cc;
+  --surface-2: #e3d6bc;
+  --border: #dccdb0;
+  --border-strong: #cbb894;
+  --text: #392c1c;
+  --text-2: #6a5940;
+  --text-3: #93806a;
+  --accent: #8c5718;
+  --accent-strong: #70440f;
+  --accent-soft: rgba(140, 87, 24, 0.12);
+  --selection: rgba(140, 87, 24, 0.16);
+  --glass: rgba(244, 236, 220, 0.92);
+  --backdrop: rgba(50, 35, 15, 0.34);
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #131417;
+  --bg-elevated: #1b1c20;
+  --surface: #1f2025;
+  --surface-2: #2a2b31;
+  --border: #2c2e34;
+  --border-strong: #3c3e46;
+  --text: #ebe6dc;
+  --text-2: #ada698;
+  --text-3: #7b766c;
+  --accent: #dcae62;
+  --accent-strong: #ecc27c;
+  --accent-soft: rgba(220, 174, 98, 0.14);
+  --accent-contrast: #1a1408;
+  --selection: rgba(220, 174, 98, 0.16);
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-m: 0 8px 24px -8px rgba(0, 0, 0, 0.6), 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0 24px 60px -16px rgba(0, 0, 0, 0.75), 0 4px 14px rgba(0, 0, 0, 0.35);
+  --backdrop: rgba(0, 0, 0, 0.55);
+  --glass: rgba(19, 20, 23, 0.9);
+
+  --hl-gold: rgba(240, 190, 60, 0.26);
+  --hl-mint: rgba(96, 200, 140, 0.22);
+  --hl-sky: rgba(100, 170, 245, 0.24);
+  --hl-lilac: rgba(170, 130, 240, 0.24);
+  --hl-rose: rgba(240, 115, 135, 0.24);
+
+  --cat-law: #d4935a;
+  --cat-history: #c2b062;
+  --cat-poetry: #85b882;
+  --cat-major-prophets: #74a8c6;
+  --cat-minor-prophets: #9a9ad6;
+  --cat-gospels: #d47c66;
+  --cat-acts: #d8a462;
+  --cat-pauline: #a888cc;
+  --cat-general: #6abab2;
+  --cat-apocalyptic: #c87896;
+  color-scheme: dark;
+}

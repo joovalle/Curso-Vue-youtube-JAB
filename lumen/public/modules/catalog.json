@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "modules": [
+    {
+      "id": "rv1909",
+      "kind": "bible",
+      "format": "esword-bblx",
+      "title": "Reina-Valera 1909",
+      "abbreviation": "RV1909",
+      "language": "es",
+      "license": "Dominio público",
+      "description": "La Santa Biblia, revisión de 1909 de la traducción de Casiodoro de Reina y Cipriano de Valera.",
+      "url": "modules/rv1909.bblx.gz",
+      "size": 1811992
+    },
+    {
+      "id": "bsb",
+      "kind": "bible",
+      "format": "esword-bblx",
+      "title": "Berean Standard Bible",
+      "abbreviation": "BSB",
+      "language": "en",
+      "license": "CC0 (dominio público)",
+      "description": "A modern, readable English translation released to the public domain in 2023.",
+      "url": "modules/bsb.bblx.gz",
+      "size": 1784462
+    },
+    {
+      "id": "blivre",
+      "kind": "bible",
+      "format": "esword-bblx",
+      "title": "Bíblia Livre",
+      "abbreviation": "BLivre",
+      "language": "pt",
+      "license": "CC BY 3.0 BR",
+      "description": "Tradução livre da Bíblia para o português, de Diego Santos e colaboradores.",
+      "url": "modules/blivre.bblx.gz",
+      "size": 1798581
+    },
+    {
+      "id": "xref-openbible",
+      "kind": "crossrefs",
+      "format": "lumen-xref",
+      "title": "Referencias cruzadas (OpenBible.info)",
+      "abbreviation": "XREF",
+      "language": "mul",
+      "license": "CC BY",
+      "description": "Más de 100.000 referencias cruzadas votadas por la comunidad.",
+      "url": "modules/xref-openbible.sqlite.gz",
+      "size": 1362960
+    }
+  ]
+}
