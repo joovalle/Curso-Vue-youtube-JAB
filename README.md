@@ -1,7 +1,5 @@
 # Curso JAB Youtube
 
-> 📖 **Nuevo:** en la carpeta [`lumen/`](./lumen) está **Lumen**, una aplicación libre para leer y estudiar la Biblia (compatible con módulos de e-Sword). Consulta su [README](./lumen/README.md).
-
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
